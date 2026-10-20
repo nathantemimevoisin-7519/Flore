@@ -1,13 +1,14 @@
 body {
     display: grid;
-    grid-template-rows: 20% 35% 35% 5% auto;
-    grid-template-columns: 35% 15% 35%;
+    grid-template-rows: 20% 30% 30% 5% auto;
+    grid-template-columns: 35% 15% 35% auto;
     font-size: xx-large;
+    background-color: pink;
 }
 
 #espace {
     z-index: 0;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/6;
     background-size: 600px 600px;
     height: 600px;
@@ -17,19 +18,19 @@ body {
 }
 
 h1 {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1;
     align-self: center;
     justify-self: center;
 }
 
 #pave {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 2/3;
 }
 
 #questionI {
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 4;
     z-index: 4;
     font-size: 40px;
