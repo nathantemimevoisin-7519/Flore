@@ -8,8 +8,9 @@
 </head>
 
 <body>
-    <h1>BON ANNIVERSAIRE</h1>
-    <p id="pave">Je ne te vois pas là maintenant mais je sais que tu es magnifique.. Comme tous les jours. A chaque fois
+    <h1 id="titre">BON ANNIVERSAIRE</h1>
+    <p id="pave">Je ne te vois pas là maintenant mais je sais que tu es magnifique.. Comme tous les jours.
+        A chaque fois
         que je te
         vois, je te demande de me marier. Evidamment, c'est une blague. Mais serieux, si je devais partager ma vie avec
         toi, en vrai pourquoi pas. Tu es tellement gentille, intelligente.. juste extraordinaire. Je suis super heureux
@@ -29,8 +30,14 @@
     let txt = document.getElementById("txt")
     let q1 = document.getElementById("question1")
     let q2 = document.getElementById("question2")
+    let pave = document.getElementById("pave")
+    let titre = document.getElementById("titre")
+    let boutonI = document.getElementById("questionI")
 
     function question() {
+        pave.style.display = "none";
+        titre.style.display = "none";
+        boutonI.style.display = "none";
         espaceP.style.backgroundImage = photo1;
         espaceP.style.zIndex = 10;
         txt.style.zIndex = 500;
@@ -42,6 +49,9 @@
     };
 
     function oui() {
+        txt.style.display = "none";
+        q1.style.display = "none";
+        q2.style.display = "none"
         espaceP.style.backgroundImage = photo2;
         espaceP.style.zIndex = 2000;
     };

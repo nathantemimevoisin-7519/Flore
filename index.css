@@ -42,7 +42,7 @@ h1 {
     grid-row: 3;
     /*! align-self: center; */
     justify-self: center;
-    font-weight : bold;
+    font-weight: bold;
     color: pink
 }
 
@@ -62,11 +62,11 @@ h1 {
     /*!align-self: center;*/
     justify-self: center;
 }
-#question2 button, #question1 button{
+
+#question2 button,
+#question1 button {
     color: purple;
     background-color: pink;
     height: 60px;
     font-size: 40px;
-    
-    
 }
