@@ -41,6 +41,7 @@ h1 {
     /*! align-self: center; */
     justify-self: center;
     font-weight : bold;
+    color: pink
 }
 
 #question1 {
@@ -50,7 +51,8 @@ h1 {
     /*!align-self: center;*/
     justify-self: center;
     font-size: 40px;
-    height: 60px
+    height: 60px;
+    color: pink
 }
 
 #question2 {
@@ -59,4 +61,8 @@ h1 {
     z-index: 0;
     /*!align-self: center;*/
     justify-self: center;
+}
+#question2 button, #question1 button{
+    color: purple;
+    background-color: pink
 }
