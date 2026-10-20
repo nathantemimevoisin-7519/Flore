@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bon anniversaire my wife !!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>BON ANNIVERSAIRE</h1>
+    <p id="pave">Je ne te vois pas là maintenant mais je sais que tu es magnifique.. Comme tous les jours. A chaque fois
+        que je te
+        vois, je te demande de me marier. Evidamment, c'est une blague. Mais serieux, si je devais partager ma vie avec
+        toi, en vrai pourquoi pas. Tu es tellement gentille, intelligente.. juste extraordinaire. Je suis super heureux
+        qu'on soit devenu amis en 2nde et qu'on le soit resté. Merci pour tout ce que tu as fait pour moi et pour toute
+        la joie que tu m'a apporté... </p>
+    <button id="questionI" type="button" onclick="question()"> ET...</button>
+    <div id="espace"></div>
+    <div id="txt"></div>
+    <div id="question1"></div>
+    <div id="question2"></div>
+</body>
+
+<script>
+    const photo1 = "url('aeroport.jpg')";
+    const photo2 = "url('Leo .png')";
+    let espaceP = document.getElementById('espace');
+    let txt = document.getElementById("txt")
+    let q1 = document.getElementById("question1")
+    let q2 = document.getElementById("question2")
+    function question() {
+        espaceP.style.backgroundImage = photo1;
+        espaceP.style.zIndex = 10;
+        txt.style.zIndex = 500;
+        txt.innerHTML = "Veux tu m'épouser ?";
+        q1.style.zIndex = 399;
+        q1.innerHTML = "<button  type='button' onclick='oui()'> Oui </button>";
+        q2.style.zIndex = 399;
+        q2.innerHTML = "<button type='button' onclick='non()'> Non </button>";
+    };
+
+    function oui() {
+        espaceP.style.backgroundImage = photo2;
+        espaceP.style.zIndex = 2000;
+    };
+
+    function non() {
+        alert("mauvaise réponse")
+    };
+</script>
+
+</html>
