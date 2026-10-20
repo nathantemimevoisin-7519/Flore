@@ -1,7 +1,8 @@
 body {
     display: grid;
-    grid-template-rows: 15% 30% 5% auto;
+    grid-template-rows: 20% 70% 5% auto;
     grid-template-columns: 50% 50%;
+    font-size: xx-large;
 }
 
 #espace {
